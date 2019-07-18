@@ -26,6 +26,6 @@ Vivamus dapibus purus, in gravida, dui tortor. Ac quam, curabitur porttitor, eni
 
 - - -
 
-© 2019 Rice Cookers | Stacey, Maria & Brian Labelle | Sous-Coding Chefs
+© 2019 Rice Cookers | Stacey Hood, Maria Squier & Brian Labelle | Sous-Coding Chefs
 
 - - -
