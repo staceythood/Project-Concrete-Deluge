@@ -28,7 +28,7 @@ You will also be responsible for preparing a formal, 10-minute presentation that
 
 ## Suggested Data Sources:
 
-* Feel free to ask us (the instructional staff) for input, but our general advice is to
+Feel free to ask us (the instructional staff) for input, but our general advice is to
 * stick to data sources that:
 * Are sufficiently large.
 * Have a consistent format.
