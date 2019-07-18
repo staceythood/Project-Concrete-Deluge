@@ -1,6 +1,6 @@
 # Project #1  | Suspendisse placerat convallis | Data Analysis
 
-![hard_solution](Images/rice-cookers-project12.jpg)
+![hard_solution](Images/rice-cookers-project1.jpg)
 
 - - -
 
