@@ -4,7 +4,7 @@
 
 - - -
 
-## Data Analysis Includes:
+# Outline Project Ideas:
 
 Lorem ipsum dolor sit amet, duis nulla ad, integer eu. Augue mi, dictum rhoncus turpis, in mi amet. Vitae quam enim. Pede consequat. Lobortis sollicitudin enim, eu etiam et. Vehicula mi, etiam condimentum tellus, nibh dictum cras.
 
@@ -14,6 +14,19 @@ Fames magnis, suspendisse placerat convallis, porta senectus. Urna et etiam. Ali
 
 Vivamus dapibus purus, in gravida, dui tortor. Ac quam, curabitur porttitor, enim commodo. At erat elementum, sociis ut. Placerat gravida, pellentesque pulvinar sed, quis vivamus suspendisse. Tempus praesent. Facilisi arcu volutpat, felis eu. Aliquam proin fringilla, ut ac lacus, convallis urna litora. Consequatur massa molestie, ut at tempus. Platea porttitor, eu a, vitae imperdiet. Sit ut at. Vel suspendisse, pellentesque libero nam, nec placerat purus.
 
+
+# Initial Data Exploration:
+Lorem ipsum dolor sit amet, duis nulla ad, integer eu. Augue mi, dictum rhoncus turpis, in mi amet. Vitae quam enim. Pede consequat. Lobortis sollicitudin enim, eu etiam et. Vehicula mi, etiam condimentum tellus, nibh dictum cras.
+
+Massa ac turpis, turpis integer placerat, wisi tempus nulla. Etiam id. Nec vel volutpat, laoreet magna, quis vel. Ac nec parturient, voluptate dui. Magna ut justo, rutrum non, lectus sociis. Luctus donec accumsan. Nam aptent torquent. In phasellus, justo vel blandit, turpis in elit.
+
+
+# Begin Research of Datasets:
+Lorem ipsum dolor sit amet, duis nulla ad, integer eu. Augue mi, dictum rhoncus turpis, in mi amet. Vitae quam enim. Pede consequat. Lobortis sollicitudin enim, eu etiam et. Vehicula mi, etiam condimentum tellus, nibh dictum cras.
+
+Massa ac turpis, turpis integer placerat, wisi tempus nulla. Etiam id. Nec vel volutpat, laoreet magna, quis vel. Ac nec parturient, voluptate dui. Magna ut justo, rutrum non, lectus sociis. Luctus donec accumsan. Nam aptent torquent. In phasellus, justo vel blandit, turpis in elit.
+
+# Submit Project Proposal for Approval:
 Lorem ipsum dolor sit amet, duis nulla ad, integer eu. Augue mi, dictum rhoncus turpis, in mi amet. Vitae quam enim. Pede consequat. Lobortis sollicitudin enim, eu etiam et. Vehicula mi, etiam condimentum tellus, nibh dictum cras.
 
 Massa ac turpis, turpis integer placerat, wisi tempus nulla. Etiam id. Nec vel volutpat, laoreet magna, quis vel. Ac nec parturient, voluptate dui. Magna ut justo, rutrum non, lectus sociis. Luctus donec accumsan. Nam aptent torquent. In phasellus, justo vel blandit, turpis in elit.
