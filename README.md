@@ -1,5 +1,4 @@
-Data Analytics - Boot Camp - Homework #4 - Heroes of Pymoli | Data Analysis
-# Project #1  | Fames magnis, suspendisse placerat convallis,
+# Project #1  | Fames magnis, suspendisse placerat convallis | Data Analysis
 
 ![hard_solution](Images/rice-cookers-project1.jpg)
 
