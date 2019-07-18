@@ -1,4 +1,4 @@
-# Project #1  | Magnis suspendisse placerat convallis | Data Analysis
+# Project #1  | Suspendisse placerat convallis | Data Analysis
 
 ![hard_solution](Images/rice-cookers-project1.jpg)
 
