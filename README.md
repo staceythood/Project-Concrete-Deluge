@@ -14,6 +14,7 @@
 * (Optional) Use at least one API, if you can find an API with data pertinent to your primary research questions.
 * Create a write-up summarizing your major findings. This should include a heading for each “question” you asked of your data and a short description of your findings and any relevant plots.
 
+![hard_solution](Images/land.gif)
 
 ## Presentation Requirements:
 You will also be responsible for preparing a formal, 10-minute presentation that covers:
