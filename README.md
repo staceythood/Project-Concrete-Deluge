@@ -38,6 +38,9 @@ Feel free to ask us (the instructional staff) for input, but our general advice 
 ## Submit Project Proposal for Approval:
 Lorem ipsum dolor sit amet, duis nulla ad, integer eu. Augue mi, dictum rhoncus turpis, in mi amet. Vitae quam enim. Pede consequat. Lobortis sollicitudin enim, eu etiam et. Vehicula mi, etiam condimentum tellus, nibh dictum cras.
 
+# Referenced Links:
+
+
 - - -
 
 © 2019 Rice Cookers | Stacey Hood, Maria Squier & Brian Labelle | Sous-Coding Chefs
