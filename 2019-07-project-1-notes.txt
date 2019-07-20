@@ -1,0 +1,33 @@
+how does uncontrolled urban sprawl impact flooding
+
+
+
+natural diaster
+population incease, cont
+
+population density, focus on construction and urban sprall.
+exponetially increased fallout from natual diasaters.
+
+how goes over construction acts as catalyst for flooding. / natural diasters.
+
+
+	over population promoting, subcidence, 
+- more construction
+- more people
+- flood insurance
+- visualizations, US map of population at night, 1950 --- > 2019 increase 
+
+- GIS natual flood 
+
+Track Houston subsidence in recent years allowing the city to flood easier---- I think its USGS
+
+# https://data.world/uscensusbureau/construction-spending
+# Link: https://catalog.data.gov/dataset/national-flood-hazard-layer-nfhl
+# https://phys.org/news/2018-11-houston-urban-sprawl-rainfall-hurricane.html
+# 
+
+HOUSTON NATIONAL WEATHER SERVICE OFFICE, TX US
+View Full Details
+Station ID: GHCND:USC00414333
+Period of Record: 1990-12-01 : 2019-07-07
+
