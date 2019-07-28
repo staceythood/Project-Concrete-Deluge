@@ -1,0 +1,219 @@
+CELL # 1
+
+# Dependencies
+import gmaps
+import requests
+import json
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+import requests
+
+# Google developer API key
+from api_keys import api_key
+from config import gkey
+
+# Configure gmaps
+gmaps.configure(api_key=gkey)
+
+# REFERENCE LINK FOR COLUMN DEFINITION
+# https://www.fema.gov/openfema-dataset-individual-assistance-housing-registrants-large-disasters-v1
+
+
+print("FEMA DataSet : Individual Assistance Housing Registrants Large Disasters")
+# FEMA Data | KINGWOOD Repair Amount > 25000 | 422 rows
+url_houston = "https://www.fema.gov/api/open/v1/IndividualAssistanceHousingRegistrantsLargeDisasters?$filter=damagedStateAbbreviation%20eq%20%27TX%27%20and%20damagedCity%20eq%20%27HOUSTON%27%20and%20repairAmount%20gt%2025000"
+url_humble = "https://www.fema.gov/api/open/v1/IndividualAssistanceHousingRegistrantsLargeDisasters?$filter=damagedStateAbbreviation%20eq%20%27TX%27%20and%20damagedCity%20eq%20%27HUMBLE%27%20and%20repairAmount%20gt%2025000"
+url_katy = "https://www.fema.gov/api/open/v1/IndividualAssistanceHousingRegistrantsLargeDisasters?$filter=damagedStateAbbreviation%20eq%20%27TX%27%20and%20damagedCity%20eq%20%27KATY%27%20and%20repairAmount%20gt%2025000"
+url_kingwood = "https://www.fema.gov/api/open/v1/IndividualAssistanceHousingRegistrantsLargeDisasters?$filter=damagedStateAbbreviation%20eq%20%27TX%27%20and%20damagedCity%20eq%20%27KINGWOOD%27%20and%20repairAmount%20gt%2025000"
+url_pearland = "https://www.fema.gov/api/open/v1/IndividualAssistanceHousingRegistrantsLargeDisasters?$filter=damagedStateAbbreviation%20eq%20%27TX%27%20and%20damagedCity%20eq%20%27PEARLAND%27%20and%20repairAmount%20gt%2025000"
+#url_spring = "https://www.fema.gov/api/open/v1/IndividualAssistanceHousingRegistrantsLargeDisasters?$filter=damagedStateAbbreviation%20eq%20%27TX%27%20and%20damagedCity%20eq%20%27SPING%27%20and%20repairAmount%20gt%2025000"
+
+url_spring1 = "https://www.fema.gov/api/open/v1/IndividualAssistanceHousingRegistrantsLargeDisasters?$filter=damagedZipCode%20eq%20%2777373%27%20and%20repairAmount%20gt%2025000"
+url_spring2 = "https://www.fema.gov/api/open/v1/IndividualAssistanceHousingRegistrantsLargeDisasters?$filter=damagedZipCode%20eq%20%2777389%27%20and%20repairAmount%20gt%2025000"
+url_spring3 = "https://www.fema.gov/api/open/v1/IndividualAssistanceHousingRegistrantsLargeDisasters?$filter=damagedZipCode%20eq%20%2777388%27%20and%20repairAmount%20gt%2025000"
+url_spring4 = "https://www.fema.gov/api/open/v1/IndividualAssistanceHousingRegistrantsLargeDisasters?$filter=damagedZipCode%20eq%20%2777379%27%20and%20repairAmount%20gt%2025000"
+url_spring5 = "https://www.fema.gov/api/open/v1/IndividualAssistanceHousingRegistrantsLargeDisasters?$filter=damagedZipCode%20eq%20%2777386%27%20and%20repairAmount%20gt%2025000"
+
+url_sugarland1 = "https://www.fema.gov/api/open/v1/IndividualAssistanceHousingRegistrantsLargeDisasters?$filter=damagedZipCode%20eq%20%2777478%27%20and%20repairAmount%20gt%2025000"
+url_sugarland2 = "https://www.fema.gov/api/open/v1/IndividualAssistanceHousingRegistrantsLargeDisasters?$filter=damagedZipCode%20eq%20%2777479%27%20and%20repairAmount%20gt%2025000"
+url_sugarland3 = "https://www.fema.gov/api/open/v1/IndividualAssistanceHousingRegistrantsLargeDisasters?$filter=damagedZipCode%20eq%20%2777487%27%20and%20repairAmount%20gt%2025000"
+url_sugarland4 = "https://www.fema.gov/api/open/v1/IndividualAssistanceHousingRegistrantsLargeDisasters?$filter=damagedZipCode%20eq%20%2777496%27%20and%20repairAmount%20gt%2025000"
+url_sugarland5 = "https://www.fema.gov/api/open/v1/IndividualAssistanceHousingRegistrantsLargeDisasters?$filter=damagedZipCode%20eq%20%2777498%27%20and%20repairAmount%20gt%2025000"
+
+url_woodlands = "https://www.fema.gov/api/open/v1/IndividualAssistanceHousingRegistrantsLargeDisasters?$filter=damagedStateAbbreviation%20eq%20%27TX%27%20and%20damagedCity%20eq%20%27THE%20WOODLANDS%27%20and%20repairAmount%20gt%2025000"
+url_friendswoods = "https://www.fema.gov/api/open/v1/IndividualAssistanceHousingRegistrantsLargeDisasters?$filter=damagedStateAbbreviation%20eq%20%27TX%27%20and%20damagedCity%20eq%20%27FRIENDSWOOD%27%20and%20repairAmount%20gt%2025000"
+
+print(" ")
+print("Calling APIs...")
+
+houston = requests.get(url_houston).json()
+humble = requests.get(url_humble).json()
+katy = requests.get(url_katy).json()
+kingwood = requests.get(url_kingwood).json()
+pearland = requests.get(url_pearland).json()
+
+spring1 = requests.get(url_spring1).json()
+spring2 = requests.get(url_spring2).json()
+spring3 = requests.get(url_spring3).json()
+spring4 = requests.get(url_spring2).json()
+spring5 = requests.get(url_spring3).json()
+
+sugarland1 = requests.get(url_sugarland1).json()
+sugarland2 = requests.get(url_sugarland2).json()
+sugarland3 = requests.get(url_sugarland3).json()
+sugarland4 = requests.get(url_sugarland2).json()
+sugarland5 = requests.get(url_sugarland3).json()
+
+
+
+#sugarland = requests.get(url_sugarland).json()
+woodlands = requests.get(url_woodlands).json()
+friendswood = requests.get(url_friendswoods).json()
+
+print(" ")
+print("Creating DataFrames & Populating DataFrames")
+
+df_houston = pd.DataFrame(houston["IndividualAssistanceHousingRegistrantsLargeDisasters"])
+df_humble = pd.DataFrame(humble["IndividualAssistanceHousingRegistrantsLargeDisasters"])
+df_katy = pd.DataFrame(katy["IndividualAssistanceHousingRegistrantsLargeDisasters"])
+df_kingwood = pd.DataFrame(kingwood["IndividualAssistanceHousingRegistrantsLargeDisasters"])
+df_pearland = pd.DataFrame(pearland["IndividualAssistanceHousingRegistrantsLargeDisasters"])
+df_spring1 = pd.DataFrame(spring1["IndividualAssistanceHousingRegistrantsLargeDisasters"])
+df_spring2 = pd.DataFrame(spring2["IndividualAssistanceHousingRegistrantsLargeDisasters"])
+df_spring3 = pd.DataFrame(spring3["IndividualAssistanceHousingRegistrantsLargeDisasters"])
+df_spring4 = pd.DataFrame(spring2["IndividualAssistanceHousingRegistrantsLargeDisasters"])
+df_spring5 = pd.DataFrame(spring3["IndividualAssistanceHousingRegistrantsLargeDisasters"])
+
+df_sugarland1 = pd.DataFrame(sugarland1["IndividualAssistanceHousingRegistrantsLargeDisasters"])
+df_sugarland2 = pd.DataFrame(sugarland2["IndividualAssistanceHousingRegistrantsLargeDisasters"])
+df_sugarland3 = pd.DataFrame(sugarland3["IndividualAssistanceHousingRegistrantsLargeDisasters"])
+df_sugarland4 = pd.DataFrame(sugarland2["IndividualAssistanceHousingRegistrantsLargeDisasters"])
+df_sugarland5 = pd.DataFrame(sugarland3["IndividualAssistanceHousingRegistrantsLargeDisasters"])
+#df_sugarland = pd.DataFrame(sugarland["IndividualAssistanceHousingRegistrantsLargeDisasters"])
+df_woodlands = pd.DataFrame(woodlands["IndividualAssistanceHousingRegistrantsLargeDisasters"])
+df_friendswood = pd.DataFrame(friendswood["IndividualAssistanceHousingRegistrantsLargeDisasters"])
+
+# Consolidate FEMA CITY NAME that won't pull by damageCity
+df_spring = pd.concat([df_spring1, df_spring2, df_spring3, df_spring4, df_spring5])
+df_sugarland = pd.concat([df_sugarland1, df_sugarland2, df_sugarland3, df_sugarland4, df_sugarland5])
+
+print(" ")
+print("FEMA DataSet : Individual Assistance Housing Registrants Large Disasters | Repair Amount > 25000")
+print("Repair Amount > 25000 for the cities of: Houston, Humble, Katy, Pearland, Spring, Sugarland, The Woodlands & Friendswood.")
+print("Data Ready...")
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+CELL #2..
+
+OLD
+#df_data = pd.DataFrame(columns=['Houston', 'Humble', 'Katy', 'Kingwood', 'Pearland', 'Sugarland', 'Woodlands', 'Friendswood'])
+df_data = pd.DataFrame(columns=['Area','Claim Count > $25000.00', 'FEMA | Real Property Damage > $25000.00'])
+
+# RPFVL : Real property damage amount observed by FEMA
+df_data["Area"] = ['Houston', 'Humble', 'Katy', 'Kingwood', 'Pearland','Spring', 'Sugarland', 'The Woodlands','Friendswood']
+df_data["Claim Count > $25000.00"] = [df_houston['rpfvl'].count(), df_humble['rpfvl'].count(), df_katy['rpfvl'].count(), df_kingwood['rpfvl'].count(), df_pearland['rpfvl'].count(), df_spring['rpfvl'].count(), df_sugarland['rpfvl'].count(),  df_woodlands['rpfvl'].count(), df_friendswood['rpfvl'].count()]
+df_data["FEMA | Real Property Damage > $25000.00"] = [df_houston['rpfvl'].sum(), df_humble['rpfvl'].sum(), df_katy['rpfvl'].sum(), df_kingwood['rpfvl'].sum(), df_pearland['rpfvl'].sum(), df_spring['rpfvl'].sum(), df_sugarland['rpfvl'].sum(), df_woodlands['rpfvl'].sum(), df_friendswood['rpfvl'].sum()]
+
+df_data
+
+NEW
+#df_data = pd.DataFrame(columns=['Houston', 'Humble', 'Katy', 'Kingwood', 'Pearland', 'Sugarland', 'Woodlands', 'Friendswood'])
+#df_repairAmount = pd.DataFrame(columns=['Area','Claim Count > $25000.00', 'FEMA | Real Property Damage > $25000.00'])
+df_repairAmount = pd.DataFrame(columns=['Area','Repair Amount Claim Count > $25000.00', 'Repair Amount > $25000.00'])
+
+# repairAmount :
+df_repairAmount["Area"] = ['Houston', 'Humble', 'Katy', 'Kingwood', 'Pearland','Spring', 'Sugarland', 'The Woodlands','Friendswood']
+df_repairAmount["Repair Amount Claim Count > $25000.00"] = [df_houston['repairAmount'].count(), df_humble['repairAmount'].count(), df_katy['repairAmount'].count(), df_kingwood['repairAmount'].count(), df_pearland['repairAmount'].count(), df_spring['repairAmount'].count(), df_sugarland['repairAmount'].count(),  df_woodlands['repairAmount'].count(), df_friendswood['repairAmount'].count()]
+df_repairAmount['Repair Amount > $25000.00'] = [df_houston['repairAmount'].sum(), df_humble['repairAmount'].sum(), df_katy['repairAmount'].sum(), df_kingwood['repairAmount'].sum(), df_pearland['repairAmount'].sum(), df_spring['repairAmount'].sum(), df_sugarland['repairAmount'].sum(), df_woodlands['repairAmount'].sum(), df_friendswood['repairAmount'].sum()]
+
+df_repairAmount
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Cell #3....
+
+# Import Zipcodes
+df_zipcodes = pd.DataFrame(columns=['Zipcode','Lattitude','Longitude'])
+df_zipcodes = pd.read_csv('zipcodes.csv')
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Cell #4....
+
+# count the unique weighted zipcodes only unique zipcode.
+sr_houston_count = df_houston.groupby('damagedZipCode')['rpfvl'].count()
+sr_humble_count = df_humble.groupby('damagedZipCode')['rpfvl'].count()
+sr_katy_count = df_katy.groupby('damagedZipCode')['rpfvl'].count()
+sr_kingwood_count = df_kingwood.groupby('damagedZipCode')['rpfvl'].count()
+sr_pearland_count = df_pearland.groupby('damagedZipCode')['rpfvl'].count()
+sr_spring_count = df_spring.groupby('damagedZipCode')['rpfvl'].count()
+sr_sugarland_count = df_sugarland.groupby('damagedZipCode')['rpfvl'].count()
+sr_woodlands_count = df_woodlands.groupby('damagedZipCode')['rpfvl'].count()
+sr_friendswood_count = df_friendswood.groupby('damagedZipCode')['rpfvl'].count()
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+gap
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+Cell 999... Plotting CSV file to GMAPS...
+
+
+# Create aiport dataframe
+compiledDamagedZipCodes_df = pd.DataFrame(columns=['damagedZipCode','count', 'lattitude','longitude'])
+compiledDamagedZipCodes_df = pd.read_csv('compiledDamagedZipCodes.csv')
+
+
+# Store latitude and longitude in locations
+locations = compiledDamagedZipCodes_df[["lattitude", "longitude"]]
+
+# Fill NaN values and convert to float
+rating = compiledDamagedZipCodes_df["count"].astype(float)
+
+# Plot Heatmap
+fig = gmaps.figure()
+
+# Create heat layer
+heat_layer = gmaps.heatmap_layer(locations, weights=rating/1, 
+                                 dissipating=False, max_intensity=250,
+                                 point_radius=100)
+
+
+# Add layer
+fig.add_layer(heat_layer)
+
+#markers = gmaps.marker_layer(locations)
+# Add the layer to the map
+#fig.add_layer(markers)
+
+
+# Display figure
+fig
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
