@@ -1,4 +1,4 @@
-## Project #1  | How does uncontrolled urban sprawl impact flooding ???
+## Project #1  | Concrete Deluge | How does uncontrolled urban sprawl impact flooding ???
 ![hard_solution](Images/rice-cookers-project1.jpg)
 
 - - -
@@ -36,7 +36,7 @@ Feel free to ask us (the instructional staff) for input, but our general advice 
 * Are well-documented.
 
 ## Submit Project Proposal for Approval:
-Lorem ipsum dolor sit amet, duis nulla ad, integer eu. Augue mi, dictum rhoncus turpis, in mi amet. Vitae quam enim. Pede consequat. Lobortis sollicitudin enim, eu etiam et. Vehicula mi, etiam condimentum tellus, nibh dictum cras.
+
 
 # Referenced Links:
 
