@@ -1,74 +1,126 @@
-#1
-#1/Activities
-#1/Activities/01-Ins_Workflows
-#1/Activities/01-Ins_Workflows/Solved
-#1/Activities/01-Ins_Workflows/Unsolved
-#1/Activities/02-Stu_Workflows
-#1/Activities/02-Stu_Workflows/Solved
-#1/Activities/02-Stu_Workflows/Unsolved
-#1/Activities/03-Ins_Branches
-#1/Activities/03-Ins_Branches/Solved
-#1/Activities/03-Ins_Branches/Unsolved
-#1/Activities/04-Stu_Branches
-#1/Activities/04-Stu_Branches/Solved
-#1/Activities/04-Stu_Branches/Unsolved
-#1/Activities/05-Ins_Push
-#1/Activities/05-Ins_Push/Solved
-#1/Activities/05-Ins_Push/Unsolved
-#1/Activities/06-Stu_Push
-#1/Activities/06-Stu_Push/Solved
-#1/Activities/06-Stu_Push/Unsolved
-#1/Images
-#1/ProjectGuidelines
-#1/Supplemental
-2
-2/Activities
-2/Activities/01-Ins_Pull
-2/Activities/01-Ins_Pull/Solved
-2/Activities/01-Ins_Pull/Unsolved
-2/Activities/02-Stu_Pull
-2/Activities/02-Stu_Pull/Solved
-2/Activities/02-Stu_Pull/Unsolved
-2/Activities/03-Evr_Merge
-2/Activities/03-Evr_Merge/Solved
-2/Activities/03-Evr_Merge/Unsolved
-2/Activities/04-Evr_Pull_Requests
-2/Activities/04-Evr_Pull_Requests/Solved
-2/Activities/04-Evr_Pull_Requests/Unsolved
-2/Images
-2/Supplemental
-3
-3/Activities
-3/Activities/01-Par_Null_Hypothesis
-3/Activities/01-Par_Null_Hypothesis/Solved
-3/Activities/01-Par_Null_Hypothesis/Unsolved
-3/Activities/02-Ins_TTest
-3/Activities/02-Ins_TTest/Solved
-3/Activities/02-Ins_TTest/Unsolved
-3/Activities/03-Stu_Sardines
-3/Activities/03-Stu_Sardines/Resources
-3/Activities/03-Stu_Sardines/Solved
-3/Activities/03-Stu_Sardines/Unsolved
-3/Activities/04-Ins_ANOVA
-3/Activities/04-Ins_ANOVA/Resources
-3/Activities/04-Ins_ANOVA/Solved
-3/Activities/04-Ins_ANOVA/Unsolved
-3/Activities/05-Stu_ANOVA
-3/Activities/05-Stu_ANOVA/Resources
-3/Activities/05-Stu_ANOVA/Solved
-3/Activities/05-Stu_ANOVA/Unsolved
-3/Activities/06-Ins_Chi_Square
-3/Activities/06-Ins_Chi_Square/Solved
-3/Activities/06-Ins_Chi_Square/Unsolved
-3/Activities/07-Stu_Chi_Square
-3/Activities/07-Stu_Chi_Square/Solved
-3/Activities/07-Stu_Chi_Square/Unsolved
-3/Extra_Content
-3/Extra_Content/Activities
-3/Extra_Content/Activities/01-Ins_Merge_Conflicts
-3/Extra_Content/Activities/02-Stu_Merge_Conflicts
-3/Extra_Content/Activities/03-Evr_Pull_Requests
-3/Extra_Content/Activities/04-Stu_Stash
-3/Extra_Content/Images
-3/Images
-3/Supplemental
+# Byte-compiled / optimized / DLL files
+# 2019-07-09
+config.py
+api_keys.py
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
