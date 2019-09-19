@@ -1,17 +1,16 @@
-## Project #1  | Concrete Deluge | How does uncontrolled urban sprawl impact flooding ???
+## Project #1  | Concrete Deluge | How does uncontrolled urban sprawl impact flooding???
 ![hard_solution](Images/rice-cookers-project1.jpg)
 
 - - -
+Demonstrate the correlation between urban construction and water retention during natural disasters. We utilized building permits to demonstrate city growth and FEMA / USGS data for flooding and subsidence. Plotting graphics, creating heatmaps to help visual the impact over the years.
 
-# Project Requirements:
-## Development Requirements:
 
-* Use Pandas to clean and format your dataset(s).
-* Create a Jupyter Notebook describing the data exploration and cleanup process.
-* Create a Jupyter Notebook illustrating the final data analysis.
-* Use Matplotlib to create a total of 6–8 visualizations of your data (ideally, at least 2 per ”question” you ask of your data).
-* Save PNG images of your visualizations to distribute to the class and instructional team, and for inclusion in your presentation.
-* (Optional) Use at least one API, if you can find an API with data pertinent to your primary research questions.
+
+## Project Development:
+
+* Used Pandas to import, clean and format dataset(s).
+* Created a Jupyter Notebook describing the data exploration and cleanup process and illustrating the final data analysis.
+* Used Matplotlib to create a total of 8 visualizations of the data
 * Create a write-up summarizing your major findings. This should include a heading for each “question” you asked of your data and a short description of your findings and any relevant plots.
 
 ![hard_solution](Images/land.gif)
