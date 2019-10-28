@@ -1,7 +1,7 @@
-## Project #1  | Concrete Deluge | How does uncontrolled urban sprawl impact flooding???
-![hard_solution](Images/rice-cookers-project1.jpg)
+## Concrete Deluge | How does uncontrolled urban sprawl impact flooding?
+<!-- ![hard_solution](Images/rice-cookers-project1.jpg) -->
 
-The city of Houston and nearby counties have experienced an exponential amount of residential and commercial growth. Below
+The city of Houston and nearby counties have experienced an exponential amount of residential and commercial growth. 
 
 ![hard_solution](Images/land.gif)
 
@@ -15,7 +15,7 @@ This project attempts to demonstrate the correlation between urban construction 
 * Created a Jupyter Notebook describing the data exploration and cleanup process and illustrating the final data analysis.
 * Used Matplotlib to create a total of 8 visualizations of the data
 
-# Conclusions:
+## Conclusions:
 The first plot below demonstrates the growth of the given building permits since 2000. The second plot shows the amount of soil compaction during the same period.
 
 ![hard_solution](Images/Permitsvscompaction.png)
